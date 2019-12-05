@@ -1,4 +1,3 @@
-import downloader
 import os
 
 class SaveData():
