@@ -1,3 +1,4 @@
+#DONE
 from __future__ import print_function
 
 import urllib.request, urllib.parse, urllib.error
@@ -73,3 +74,6 @@ def load_yahoo_quote(ticker, begindate, enddate, info = 'quote'):
 	f = urllib.request.urlopen(req)
 	alines = f.read().decode('utf-8')
 	return alines.split('\n')
+
+if __name__ == "__main__":
+	print(load_yahoo_quote("GOOG",'20190719','20190919'))
